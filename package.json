@@ -1,0 +1,30 @@
+{
+  "name": "truffle-ci-example",
+  "version": "1.0.0",
+  "description": "Example for using continuous integration with Truffle",
+  "main": "truffle-config.js",
+  "scripts": {
+    "prepare": "npx truffle compile",
+    "test": "bash ./scripts/run_tests.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gorgos/Truffle-CI-Example.git"
+  },
+  "author": "Markus Waas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gorgos/Truffle-CI-Example/issues"
+  },
+  "homepage": "https://github.com/gorgos/Truffle-CI-Example#readme",
+  "dependencies": {
+    "ganache-cli": "^6.9.1",
+    "truffle": "^5.1.27"
+  },
+  "devDependencies": {
+    "@codechecks/client": "^0.1.10",
+    "coveralls": "^3.1.0",
+    "eth-gas-reporter": "^0.2.25",
+    "solidity-coverage": "^0.7.5"
+  }
+}
